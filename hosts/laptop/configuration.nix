@@ -12,4 +12,6 @@
   environment.systemPackages = with pkgs; [
     powertop
   ];
+
+  system.stateVersion = "25.11";
 }

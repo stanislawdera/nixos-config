@@ -86,6 +86,4 @@
     sbctl # for secureboot debugging
     gparted
   ];
-
-  system.stateVersion = "25.11";
 }
