@@ -84,6 +84,7 @@
   # System-wide programs on all devices
   environment.systemPackages = with pkgs; [
     sbctl # for secureboot debugging
+    gparted
   ];
 
   system.stateVersion = "25.11";
