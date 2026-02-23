@@ -8,6 +8,7 @@ let
     yubioath-flutter
     rpi-imager
     nodejs_24
+    thunderbird
   ];
 
   # Only on laptop
