@@ -42,6 +42,10 @@
             hostName = "laptop";
             secureBoot = true;
           };
+          pc = mkHost {
+            hostName = "pc";
+            secureBoot = true;
+          };
         };
       };
 }
