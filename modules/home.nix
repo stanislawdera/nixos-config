@@ -7,6 +7,7 @@ let
     zed-editor
     yubioath-flutter
     rpi-imager
+    nodejs_24
   ];
 
   # Only on laptop
