@@ -86,5 +86,6 @@
   environment.systemPackages = with pkgs; [
     sbctl # for secureboot debugging
     gparted
+    btrfs-progs # BTRFS support
   ];
 }
