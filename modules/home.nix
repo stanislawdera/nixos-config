@@ -9,6 +9,7 @@ let
     rpi-imager
     nodejs_24
     thunderbird
+    bruno
   ];
 
   # Only on laptop
