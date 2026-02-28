@@ -5,6 +5,7 @@
   home.packages = with pkgs.gnomeExtensions; [
     dash-to-dock
     pip-on-top
+    clipboard-indicator
   ];
 
   dconf.settings = {
@@ -18,6 +19,7 @@
       enabled-extensions = with pkgs.gnomeExtensions; [
         dash-to-dock.extensionUuid
         pip-on-top.extensionUuid
+        clipboard-indicator.extensionUuid
       ];
     };
 
@@ -27,6 +29,15 @@
       show-drives = false;
       show-show-apps-button = false;
       show-mounts = false;
+    };
+
+    # Clipboard history
+    "org/gnome/shell/keybindings" = {
+        focus-active-notification = [];
+        toggle-message-tray = [];
+    };
+    "org/gnome/shell/extensions/clipboard-indicator" = {
+          toggle-menu = ["<Super>v"];
     };
   };
 }
