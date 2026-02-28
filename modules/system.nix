@@ -87,5 +87,6 @@
     sbctl # for secureboot debugging
     gparted
     btrfs-progs # BTRFS support
+    android-studio
   ];
 }
