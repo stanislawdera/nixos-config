@@ -10,6 +10,7 @@ let
     nodejs_24
     thunderbird
     bruno
+    discord
   ];
 
   # Only on laptop
