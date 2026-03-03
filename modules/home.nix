@@ -11,6 +11,7 @@ let
     thunderbird
     bruno
     discord
+    onlyoffice-desktopeditors
   ];
 
   # Only on laptop
