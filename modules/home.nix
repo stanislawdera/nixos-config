@@ -12,6 +12,7 @@ let
     bruno
     discord
     onlyoffice-desktopeditors
+    google-chrome
   ];
 
   # Only on laptop
