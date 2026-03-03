@@ -13,6 +13,7 @@ let
     discord
     onlyoffice-desktopeditors
     google-chrome
+    gradia
   ];
 
   # Only on laptop
