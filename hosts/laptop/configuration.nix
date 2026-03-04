@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/system.nix
+    ../../modules/network.nix
   ];
 
   networking.hostName = "laptop";
