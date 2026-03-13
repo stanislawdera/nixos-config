@@ -1,4 +1,10 @@
-{ pkgs, lib, hostName, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  lib,
+  hostName,
+  ...
+}:
 
 let
   # On all devices
@@ -18,26 +24,29 @@ let
 
   # Only on laptop
   laptopPackages = with pkgs; [
+    pkgs-unstable.cisco-packet-tracer_9
+    wireshark
   ];
 
   # Only on PC
-  pcPackages = with pkgs; [
+  pcPackages = [
   ];
 
 in
 {
   imports = [
-      ./gnome.nix
-      ./zsh.nix
+    ./gnome.nix
+    ./zsh.nix
   ];
 
   home.username = "staszek";
   home.homeDirectory = "/home/staszek";
 
   # My apps
-  home.packages = sharedPackages
-      ++ lib.optionals (hostName == "laptop") laptopPackages
-      ++ lib.optionals (hostName == "pc") pcPackages;
+  home.packages =
+    sharedPackages
+    ++ lib.optionals (hostName == "laptop") laptopPackages
+    ++ lib.optionals (hostName == "pc") pcPackages;
 
   # Git
   programs.git = {

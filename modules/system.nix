@@ -87,5 +87,6 @@
     gparted
     btrfs-progs # BTRFS support
     android-studio
+    nil
   ];
 }
