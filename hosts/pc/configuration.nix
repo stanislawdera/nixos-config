@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ config, ... }:
 
 {
   imports = [
@@ -10,8 +10,8 @@
 
   # NVIDIA stuff
   hardware.graphics = {
-      enable = true;
-    };
+    enable = true;
+  };
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     modesetting.enable = true;
@@ -23,7 +23,7 @@
   };
 
   # PC specific packages
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = [
 
   ];
 

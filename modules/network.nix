@@ -7,9 +7,9 @@
 #      sudo chown -R root:root /etc/secure
 #      sudo chmod 700 /etc/secure
 #      sudo chmod 600 /etc/secure/*
-# 4. Replace `your-university.edu` and `radius.your-university.edu` below with your institution's specific details
+# 4. Replace `your-university.edu` and `radius.polsl.pl` below with your institution's specific details
 
-{ config, pkgs, lib, hostName, ... }:
+{ ... }:
 
 {
   networking.networkmanager.enable = true;
