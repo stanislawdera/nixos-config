@@ -20,6 +20,7 @@ let
     onlyoffice-desktopeditors
     google-chrome
     gradia
+    inkscape
   ];
 
   # Only on laptop

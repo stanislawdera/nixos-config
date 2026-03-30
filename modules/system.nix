@@ -1,8 +1,16 @@
-{ pkgs, lib, secureBoot, ... }:
+{
+  pkgs,
+  lib,
+  secureBoot,
+  ...
+}:
 
 {
   # Enable Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Bootloader
   boot.loader.systemd-boot.enable = lib.mkForce (!secureBoot);
@@ -65,12 +73,18 @@
   users.users.staszek = {
     isNormalUser = true;
     description = "Staszek";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     shell = pkgs.zsh;
   };
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # nix-ld (mainly for Flutter/Android development)
+  programs.nix-ld.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
