@@ -16,6 +16,7 @@
   boot.loader.systemd-boot.enable = lib.mkForce (!secureBoot);
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.systemd.enable = true; # required for TPM auto-unlock
+  boot.loader.systemd-boot.configurationLimit = 3;
 
   # Lanzaboote - secureboot
   boot.lanzaboote = lib.mkIf secureBoot {
