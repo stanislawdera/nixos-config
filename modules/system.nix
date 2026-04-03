@@ -96,9 +96,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # nix-ld (mainly for Flutter/Android development)
-  programs.nix-ld.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
