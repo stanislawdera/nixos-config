@@ -57,7 +57,19 @@
   console.keyMap = "pl2";
 
   # Printer
-  services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [
+      cups-filters
+      cups-browsed
+    ];
+  };
 
   # Audio
   services.pulseaudio.enable = false;
