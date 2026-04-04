@@ -96,6 +96,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Direnv
+  programs.direnv.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
