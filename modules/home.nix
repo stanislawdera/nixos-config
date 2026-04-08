@@ -21,6 +21,7 @@ let
     google-chrome
     gradia
     inkscape
+    gnome-decoder
   ];
 
   # Only on laptop
