@@ -22,6 +22,7 @@ let
     gradia
     inkscape
     gnome-decoder
+    filezilla
   ];
 
   # Only on laptop
