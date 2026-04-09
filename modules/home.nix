@@ -23,6 +23,7 @@ let
     inkscape
     gnome-decoder
     filezilla
+    flare-signal
   ];
 
   # Only on laptop
